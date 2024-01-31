@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background: #202020;
+  color: #efefef;
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .navBar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header .navBar a {
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.header .navBar a:hover {
+  color: palegreen;
+}
+
+.header .btnBox {
+  display: none;
+}
+
+/* registrar */
+.registrarBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 30px 0;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registrarBox .registroTitle h1 {
+  color: palegreen;
+  font-size: 35px;
+  cursor: default;
+}
+.registrarBox .formBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registrarBox .formBox form input {
+  font-size: 20px;
+  background-color: #303030;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  color: #efefef;
+}
+
+.registrarBox .submitBtn {
+  text-align: center;
+}
+
+.registrarBox .submitBtn button {
+  font-size: 22px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #efefef;
+  background-color: rgb(67, 137, 67);
+}
+.registrarBox .submitBtn button:hover {
+  background: rgb(50, 50, 162);
+}
+
+/* inicio */
+.inicoBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.inicoBox .inicioTitle h1{
+  color: palegreen;
+  font-size: 35px;
+  cursor: default;
+}
+
+.inicoBox .userBox .user {
+  background: #303030;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  min-width: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.inicoBox .userBox .user p {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.inicoBox .userBox .user span {
+  color: aquamarine;
+}
+
+.inicoBox .userBox .user .btnSettings {
+  text-align: center;
+}
+
+.inicoBox .userBox .user .btnSettings a {
+  text-decoration: none;
+  color: #efefef;
+  margin: 5px;
+  background: rgb(72, 124, 72);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.inicoBox .userBox .user .btnSettings a.rojo{
+  background: red;
+}
